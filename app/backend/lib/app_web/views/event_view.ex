@@ -17,12 +17,8 @@ defmodule AppWeb.EventView do
       description: event.description,
       limit: event.limit,
       city: event.city,
-      sell_start_date: event.sell_start_date,
-      sell_end_date: event.sell_end_date,
       cost: event.cost,
       thumbnail_url: event.thumbnail_url,
-      event_start_date: event.event_start_date,
-      event_end_date: event.event_end_date,
       user: render_one(event.user, UserView, "user.json"),
       atendees: render_many(event.atendees, AtendeeView, "atendee.json")
     }
